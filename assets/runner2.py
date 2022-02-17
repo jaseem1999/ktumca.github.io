@@ -21,7 +21,7 @@ with open("../app/filesystem/filesystem.component.ts", "r+") as f:
     for i in d:
       print(str(line)+" "+i)
       if line == 10:
-        f.write(" masterDirectory = "+str(filedata))
+        f.write(" masterDirectory = "+str(filedata)+";")
       else:
         f.write(i)
       line=line+1
